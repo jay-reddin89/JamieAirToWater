@@ -1,0 +1,275 @@
+[
+  {
+    "name": "De Dietrich",
+    "models": [
+      {
+        "label": "De Dietrich",
+        "json": "../JSON/DeDietrich.json",
+        "manuals": [
+          {
+            "label": "De Dietrich strateo",
+            "url": "../PDF/De Dietrich strateo.pdf"
+          },
+          {
+            "label": "strateotc",
+            "url": "../PDF/strateotc.pdf"
+          },
+          {
+            "label": "StrateoExplodedView",
+            "url": "../PDF/StrateoExplodedView.pdf"
+          }
+        ],
+        "note": "Existing app error-code database."
+      }
+    ]
+  },
+  {
+    "name": "Kodiak Joule",
+    "models": [
+      {
+        "label": "Kodiak Joule",
+        "json": "../JSON/KodiakJoule.json",
+        "manuals": [
+          {
+            "label": "Kodiak-Installation-Maintenance-Manual",
+            "url": "../PDF/Kodiak-Installation-Maintenance-Manual.pdf"
+          },
+          {
+            "label": "kodiak joule Error codes",
+            "url": "../PDF/kodiak joule Error codes.pdf"
+          }
+        ],
+        "note": "Existing app error-code database."
+      }
+    ]
+  },
+  {
+    "name": "Joule Victorum",
+    "models": [
+      {
+        "label": "Joule Victorum",
+        "json": "../JSON/VictorumJoule.json",
+        "manuals": [
+          {
+            "label": "JouleVictorumManual",
+            "url": "../PDF/JouleVictorumManual.pdf"
+          },
+          {
+            "label": "VictorumJouleErrorCodes",
+            "url": "../PDF/VictorumJouleErrorCodes.pdf"
+          }
+        ],
+        "note": "Existing app error-code database."
+      }
+    ]
+  },
+  {
+    "name": "Grant Aerona³",
+    "models": [
+      {
+        "label": "Aerona³ R32 heat pump range — Installation and servicing",
+        "json": "../JSON/manuals/grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.json",
+        "manuals": [
+          {
+            "label": "Aerona³ R32 heat pump range — Installation and servicing manual",
+            "url": "../PDF/grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.pdf"
+          }
+        ],
+        "note": "Codes from the R32 installation and servicing manual.",
+        "pages": [
+          55,
+          56,
+          57,
+          58
+        ],
+        "sourceNote": "Extracted from sections 11.4 and 11.5. Component-specific checks and remedies are combined in possibleSolution. Uncoded symptoms and PCB LED flash patterns are excluded. C3 includes an apparent source typo: the table says voltage is normal for both fan and PCB replacement; this is retained rather than guessed."
+      },
+      {
+        "label": "Aerona³ heat pump range and heating controls — User instructions",
+        "json": "../JSON/manuals/grant-aerona3-user-instructions-irl-doc0016-rev01-2021.json",
+        "manuals": [
+          {
+            "label": "Aerona³ heat pump range and heating controls — User instructions manual",
+            "url": "../PDF/grant-aerona3-user-instructions-irl-doc0016-rev01-2021.pdf"
+          }
+        ],
+        "note": "This user guide refers to section 11 of the installation instructions for error codes.",
+        "pages": [
+          11
+        ],
+        "sourceNote": "No error-code list. Troubleshooting directs readers to section 11 of the installation instructions and to contact the installer or service engineer."
+      },
+      {
+        "label": "Existing Grant fault-code database",
+        "json": "../JSON/GrantAreona.json",
+        "manuals": [],
+        "note": "Existing app data, separate from the newly extracted R32 manual."
+      }
+    ]
+  },
+  {
+    "name": "LG Therma V",
+    "models": [
+      {
+        "label": "LG Therma V",
+        "json": "../JSON/LG.json",
+        "manuals": [
+          {
+            "label": "LG-Therma-V-Service-Manual_MFL68682007_GM_1217",
+            "url": "../PDF/LG-Therma-V-Service-Manual_MFL68682007_GM_1217.pdf"
+          }
+        ],
+        "note": "Existing app error-code database."
+      }
+    ]
+  },
+  {
+    "name": "Hitachi Yutaki",
+    "models": [
+      {
+        "label": "Hitachi Yutaki",
+        "json": "../JSON/HitachiYutaki.json",
+        "manuals": [
+          {
+            "label": "Hitachi Yutaki error codes",
+            "url": "../PDF/Hitachi Yutaki error codes.pdf"
+          }
+        ],
+        "note": "Existing app error-code database."
+      }
+    ]
+  },
+  {
+    "name": "Panasonic Aquarea",
+    "models": [
+      {
+        "label": "Panasonic Aquarea",
+        "json": "../JSON/PanasonicAquarea.json",
+        "manuals": [
+          {
+            "label": "Panasonic Aquarea — Panasonic Aquarea manual",
+            "url": "../PDF/Panasonic Aquarea manual.pdf"
+          }
+        ],
+        "note": "Existing app error-code database."
+      }
+    ]
+  },
+  {
+    "name": "Mitsubishi Ecodan",
+    "models": [
+      {
+        "label": "Ecodan EHST20 / EHPT20 cylinder units — Installation",
+        "json": "../JSON/manuals/mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.json",
+        "manuals": [
+          {
+            "label": "Ecodan EHST20 / EHPT20 cylinder units — Installation manual",
+            "url": "../PDF/mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.pdf"
+          }
+        ],
+        "note": "",
+        "pages": [
+          51
+        ],
+        "sourceNote": "Printed page 46. Code ranges and wildcard notation are preserved as printed. E9 is separately listed in the source even though it also lies within E6–EF. References to L3/L8 have been expanded using those actions."
+      },
+      {
+        "label": "Ecodan PUZ-WM AA / HA series — Installation",
+        "json": "../JSON/manuals/mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.json",
+        "manuals": [
+          {
+            "label": "Ecodan PUZ-WM AA / HA series — Installation manual",
+            "url": "../PDF/mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.pdf"
+          }
+        ],
+        "note": "This outdoor-unit installation manual contains no code list. Select the cylinder-unit manual for its codes, or consult the service manual for your exact outdoor model.",
+        "pages": [
+          15
+        ],
+        "sourceNote": "Scanned manual checked with OCR across all 20 PDF pages. Section 8.1 says LEDs flash on faults and section 8.2 refers to the indoor-unit installation manual. No named error codes or code-to-meaning table is provided."
+      }
+    ]
+  },
+  {
+    "name": "Vaillant aroTHERM plus",
+    "models": [
+      {
+        "label": "aroTHERM plus VWL 105/6–125/6 A S2 — Operation, installation and maintenance",
+        "json": "../JSON/manuals/vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.json",
+        "manuals": [
+          {
+            "label": "aroTHERM plus VWL 105/6–125/6 A S2 — Operation, installation and maintenance manual",
+            "url": "../PDF/vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.pdf"
+          }
+        ],
+        "note": "This outdoor-unit manual refers to the indoor-unit installation instructions for fault messages. No error-code list is supplied in this PDF.",
+        "pages": [
+          38
+        ],
+        "sourceNote": "No error-code list in this outdoor-unit manual. Section 10.1 directs readers to the indoor-unit installation instructions, Appendix Fault messages."
+      },
+      {
+        "label": "aroTHERM plus VWL 35/6–75/6 A S2 — Operation, installation and maintenance",
+        "json": "../JSON/manuals/vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.json",
+        "manuals": [
+          {
+            "label": "aroTHERM plus VWL 35/6–75/6 A S2 — Operation, installation and maintenance manual",
+            "url": "../PDF/vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.pdf"
+          }
+        ],
+        "note": "This outdoor-unit manual refers to the indoor-unit installation instructions for fault messages. No error-code list is supplied in this PDF.",
+        "pages": [
+          36
+        ],
+        "sourceNote": "No error-code list in this outdoor-unit manual. Section 10.1 directs readers to the indoor-unit installation instructions, Appendix Fault messages."
+      }
+    ]
+  },
+  {
+    "name": "Samsung EHS Mono R290",
+    "models": [
+      {
+        "label": "EHS Mono R290 AE***CXYB** outdoor unit — Installation",
+        "json": "../JSON/manuals/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.json",
+        "manuals": [
+          {
+            "label": "EHS Mono R290 AE***CXYB** outdoor unit — Pages 1–26",
+            "url": "../PDF/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-1-26.pdf"
+          },
+          {
+            "label": "EHS Mono R290 AE***CXYB** outdoor unit — Pages 27–52",
+            "url": "../PDF/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.pdf"
+          }
+        ],
+        "note": "The manual lists code meanings but does not provide per-code remedies.",
+        "pages": [
+          19,
+          20
+        ],
+        "sourceNote": "The manual gives meanings and error sources, but no per-code remedies. possibleSolution is intentionally empty. Original PDF pages 45–46 are in the second Samsung PDF."
+      }
+    ]
+  },
+  {
+    "name": "Daikin Altherma 4 H",
+    "models": [
+      {
+        "label": "Altherma 4 H ECH₂O EPSX(B)07 / 10 / 14 A — Installation",
+        "json": "../JSON/manuals/daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.json",
+        "manuals": [
+          {
+            "label": "Altherma 4 H ECH₂O EPSX(B)07 / 10 / 14 A — Installation manual",
+            "url": "../PDF/daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.pdf"
+          }
+        ],
+        "note": "Only three codes are mentioned in this installation manual. This is not a complete service-code list.",
+        "pages": [
+          9,
+          20,
+          34
+        ],
+        "sourceNote": "Only codes explicitly mentioned in installation instructions are included. This is not a complete fault-code table. Meanings for 7H and 89-10 describe the stated circumstances; 89-10 has no formal fault name in the source."
+      }
+    ]
+  }
+]
