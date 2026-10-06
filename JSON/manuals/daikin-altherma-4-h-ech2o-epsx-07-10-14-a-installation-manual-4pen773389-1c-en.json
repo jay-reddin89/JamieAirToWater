@@ -1,0 +1,19 @@
+{
+  "Error Codes": [
+    {
+      "errorCode": "7H",
+      "errorMeaning": "Flow error: minimum flow rate cannot be reached",
+      "possibleSolution": "Guarantee minimum flow even when remotely controlled valves are closed. Required during cooling/heating start-up, defrost and backup heater operation: EPSX(B)07: 20 l/min; EPSX(B)10: 22 l/min; EPSX(B)14: 24 l/min. See the installer reference guide and commissioning checklist."
+    },
+    {
+      "errorCode": "AA-01",
+      "errorMeaning": "Backup heater overheated or BUH power cable not connected",
+      "possibleSolution": "For the unpowered backup-heater condition described here, connect the dedicated backup heater power supply and earth cable following section 6.4.3. Make sure the power supply matches the user-interface selection. This installation manual does not provide an overheating-specific remedy."
+    },
+    {
+      "errorCode": "89-10",
+      "errorMeaning": "Start-up error described during large temperature variations or cooling start-up below 18°C; the manual does not give a formal fault name",
+      "possibleSolution": "After unlocking the unit and opening the stop valve of the outdoor refrigerant vessel, wait a few hours before first start-up to reduce the risk during large temperature variations. If it occurs while starting cooling below 18°C, change to heating or domestic hot water and repeat the process. The manual also notes the unit may briefly stop and then resume."
+    }
+  ]
+}

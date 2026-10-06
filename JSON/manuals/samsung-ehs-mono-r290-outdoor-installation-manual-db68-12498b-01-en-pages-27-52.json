@@ -1,0 +1,394 @@
+{
+  "Error Codes": [
+    {
+      "errorCode": "E108",
+      "errorMeaning": "Setting Address Duplicate Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E120",
+      "errorMeaning": "Zone2 Indoor Room Temperature Sensor Short/Open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E121",
+      "errorMeaning": "Error of ROOM Temperature Sensor in Indoor unit short/open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E122",
+      "errorMeaning": "Error of Evaporator_in Sensor of Indoor unit short/open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E123",
+      "errorMeaning": "Error of Evaporator_out Sensor of Indoor unit short/open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E162",
+      "errorMeaning": "Outdoor UNIT EEPROM Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E163",
+      "errorMeaning": "EEPROM OPTION SETTING Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E177",
+      "errorMeaning": "In hydro box, take place emerency signal Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E201",
+      "errorMeaning": "CONTROL KIT / Outdoor UNIT Communication Error (Matching Error)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E202",
+      "errorMeaning": "CONTROL KIT / Outdoor UNIT Communication Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E205",
+      "errorMeaning": "Communication Error Between Outdoor Unit Inv Micom - Fan Motor Micom",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E221",
+      "errorMeaning": "Outdoor Temperature Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E231",
+      "errorMeaning": "COND_OUT Main Temperature Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E241",
+      "errorMeaning": "COND OUT Sensor of Outdoor Unit breakaway Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E251",
+      "errorMeaning": "Discharge Temperature Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E262",
+      "errorMeaning": "Discharge Sensor breakaway Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E266",
+      "errorMeaning": "Comp Top Sensor breakaway Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E269",
+      "errorMeaning": "SUCTION Sensor breakaway Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E276",
+      "errorMeaning": "Compressor Top Temperature Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E291",
+      "errorMeaning": "High Pressure Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E296",
+      "errorMeaning": "Low Pressure Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E308",
+      "errorMeaning": "Suction Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E321",
+      "errorMeaning": "EVI Inlet Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E322",
+      "errorMeaning": "EVI Outlet Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E381",
+      "errorMeaning": "Outdoor Inverter 1 Controller PCB Overheat",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E403",
+      "errorMeaning": "Protect for Freezing Control Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E407",
+      "errorMeaning": "COMP down due to High PressureSensor Protection Control",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E410",
+      "errorMeaning": "COMP down due to Low PressureSensor Protection Control",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E416",
+      "errorMeaning": "Comp down due to discharge Temperature",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E425",
+      "errorMeaning": "Outdoor Reverse Phase or Missing Phase Detect Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E428",
+      "errorMeaning": "COMP down by Compression Ratio control Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E436",
+      "errorMeaning": "Protect for Freezing Burst Control Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E438",
+      "errorMeaning": "EVI EEV Opening Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E439",
+      "errorMeaning": "Refrigerant Leakage Error (Detect when the system is not operated)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E440",
+      "errorMeaning": "Forbid Heat mode Operation when Outdoor Temperature is over 43 °C",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E441",
+      "errorMeaning": "Forbid Cooling Mode when Outdoor Temperature is Low 10 ℃",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E443",
+      "errorMeaning": "No startup due to Low pressure",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E458",
+      "errorMeaning": "Outdoor unit Fan Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E461",
+      "errorMeaning": "[Inverter] COMP Operating failure",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E462",
+      "errorMeaning": "All currency control COMP Stop Or CT2 Low currency",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E464",
+      "errorMeaning": "[Inverter] DC peak Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E465",
+      "errorMeaning": "Compressor V limit Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E466",
+      "errorMeaning": "[Inverter] DC-Link voltage under/over Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E467",
+      "errorMeaning": "COMP Revolute Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E468",
+      "errorMeaning": "[Inverter] Comp Current Sensor Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E469",
+      "errorMeaning": "DC Link Sensor Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E471",
+      "errorMeaning": "[Inverter] OTP Error → Outdoor unit EEPROM Read/Write Error (OTP error)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E474",
+      "errorMeaning": "[Inverter] IPM Heat Sink Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E475",
+      "errorMeaning": "Outdoor unit BLDC Fan Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E483",
+      "errorMeaning": "H/W DC link over voltage Error _",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E484",
+      "errorMeaning": "PFC Overload Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E485",
+      "errorMeaning": "[Inverter] Input Current Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E488",
+      "errorMeaning": "AC Input Voltage Sensor Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E500",
+      "errorMeaning": "IPM Overheat Error for Inverter COMP",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E507",
+      "errorMeaning": "Comp Down due to high pressure or High Pressure Switch Open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E536",
+      "errorMeaning": "PHE refrigerant leakage error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E554",
+      "errorMeaning": "Refrigerant leakage error (detection during system operation)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E563",
+      "errorMeaning": "INDOOR UNIT Mixed Install Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E590",
+      "errorMeaning": "[Inverter] Data flash Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E897",
+      "errorMeaning": "Water Tank in sensor error(Short/Open)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E899",
+      "errorMeaning": "Zone1 Tw Temperature Sensor Short/ Open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E900",
+      "errorMeaning": "Zone2 Tw Temperature Sensor Short/ Open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E901",
+      "errorMeaning": "Water Inlet Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E902",
+      "errorMeaning": "Water Outlet Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E904",
+      "errorMeaning": "Water TANK Sensor SHORT / OPEN",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E906",
+      "errorMeaning": "Outdoor EVA in Sensor Error (open/short)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E907",
+      "errorMeaning": "Error due to pipe rupture protection",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E908",
+      "errorMeaning": "Error due to freeze prevention(Re- Operation is possible)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E909",
+      "errorMeaning": "Error due to freeze prevention(Re- Operation is impossible)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E910",
+      "errorMeaning": "Water Temperature Sensor on water Outlet pipe is datached",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E911",
+      "errorMeaning": "FLow Swtich Open Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E912",
+      "errorMeaning": "FLow Swtich Close Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E913",
+      "errorMeaning": "Six times detection for FLow Switch Error(Re-Operation is not possible)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E914",
+      "errorMeaning": "Error due to Incorrect Themostat Connection",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E915",
+      "errorMeaning": "Error on DC fan(Non-operating)",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E916",
+      "errorMeaning": "Mixing Sensor Short/Open",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E919",
+      "errorMeaning": "Disinfection Operation Incomplete Error",
+      "possibleSolution": ""
+    },
+    {
+      "errorCode": "E973",
+      "errorMeaning": "Water pressure sensor research (Short/ Open)",
+      "possibleSolution": ""
+    }
+  ]
+}

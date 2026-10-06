@@ -1,0 +1,164 @@
+{
+  "Error Codes": [
+    {
+      "errorCode": "A0",
+      "errorMeaning": "DC voltage error",
+      "possibleSolution": "Fan motor: Check: Operate without lead wire for Fan motor Check the electric continuity of Fuse by tester If the same error code appears again, Main PCB or Pump should be replaced If other error codes appear, Fan motor should be replaced Fuse CF6 HPID16: 250V 3A: If CF6 is blown,it should be replaced Fuse CF7 HPID10: 250V 3A HPID16: 250V 3A: If CF7 is blown,it should be replaced Pump: Check: Operate without lead wire for Pump If the same error code appears again, Main PCB or Fan motor should be replaced If other error codes appear, Pump should be replaced Reactor: Check: Check the resistance by tester (0.1Ω at 20°C) If the reactor is faulty, is should be replaced. Main PCB: Check: Check the voltage of Fan motor by tester Check the voltage of Pump by tester If the voltage is abnormal, PCB (Main should be replaced Power supply: Check: Check the power supply Confirm the power supply"
+    },
+    {
+      "errorCode": "A1",
+      "errorMeaning": "Discharge temperature error",
+      "possibleSolution": "Sensor, Temp. Discharge: Check: Check the resistance by tester If the sensor is faulty, it should be replaced Gas leakage: Check: Check the service valve and refrigerant circuit (pipe) Collect refrigerant once, then recharge with prescribed mass"
+    },
+    {
+      "errorCode": "A2",
+      "errorMeaning": "Protective action against excess Current DC current detection",
+      "possibleSolution": "Unreasonable operation under/ overload: Check: Check the place of installation (blockage of air inlet & outlet) Check the excess gas Ensure the installation position to avoid blockage of air inlet & outlet If excess gas is observed, collect all refrigerant once, then recharge with prescribed mass Drop of power voltage: Check: Check the power voltage (230V) Confirm the power supply voltage (230V) Main PCB: Check: Operate without the junction connector of Compressor lead wire If the same error code appears again, Main PCB should be replaced Momentary stop of power (In case of lightning): Restart operation Compressor: Compressor should be replaced"
+    },
+    {
+      "errorCode": "A3",
+      "errorMeaning": "CT disconnection",
+      "possibleSolution": "Main PCB: Main PCB should be replaced"
+    },
+    {
+      "errorCode": "A4",
+      "errorMeaning": "Protective action against excess Current AC current detection",
+      "possibleSolution": "Unreasonable operation under/ overload: Check: Check the place of installation (blockage of air inlet & outlet) Check the excess gas Ensure the installation position to avoid blockage of air inlet & outlet If excess gas is observed, collect all refrigerant once, then recharge with prescribed mass Drop of power voltage: Check: Check the power voltage (230V) Confirm the power supply voltage (230V) Momentary stop of power (In case of lightning): Restart operation"
+    },
+    {
+      "errorCode": "A5",
+      "errorMeaning": "Abnormal revolution of compressor",
+      "possibleSolution": "Unreasonable operation under/ overload: Check: Check the place of installation (blockage of air inlet & outlet ) Check the excess gas Ensure the installation position to avoid blockage of air inlet & outlet If excess gas is observed, collect all refrigerant once, then recharge with prescribed mass Drop of power voltage: Check: Check the power voltage (230V) Confirm the power supply voltage (230V) Fuse CF6 HPID6: 250V 15A HPID10 : 250V 25A: Check: Check the electric continuity Fuse CF6 by tester If CF6 is blown, Main PCB should be replaced Clogged the water Pump and/or water circuit: Check: Check the Pump and water circuit Remove the blockage, then restart operation Drop of power voltage: Check: Check the power voltage (230V) during operation Confirm the power supply voltage (230V) Momentary stop of power (In case of lightning): Restart operation Compressor or Main PCB: Compressor should be replaced"
+    },
+    {
+      "errorCode": "A6",
+      "errorMeaning": "Suction temperature sensor error",
+      "possibleSolution": "Sensor, Temp. Suction: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "A7",
+      "errorMeaning": "Defrost tem sensor error",
+      "possibleSolution": "Sensor, Temp. Defrost: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "A8",
+      "errorMeaning": "Discharge temp. sensor error",
+      "possibleSolution": "Sensor, Temp. Discharge: Check: Check the resistance by tester (*1) If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "C1",
+      "errorMeaning": "Upper fan motor error (HPID13R32 & HPID17R32)",
+      "possibleSolution": "Fuse CF7 (250V T3.15A): Check: Check the electric continuity Fuse CF7 by tester If CF7 is blown, Fan motor and CF7 should be replaced If CF7 is not blown, check the voltage of Fan motor If the voltage is normal, Fan motor should be replaced If the voltage is abnormal, Main PCB should be replaced"
+    },
+    {
+      "errorCode": "C2",
+      "errorMeaning": "Outdoor temp. sensor error",
+      "possibleSolution": "Sensor, Temp. Outdoor: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "C3",
+      "errorMeaning": "Lower Fan motor error (HPID13R32 & HPID17R32) Fan motor error (HPID6R32 & HPID10R32)",
+      "possibleSolution": "Fuse CF6 (HPID16: 250V T3.15A): Check: Check the electric continuity of Fuse CF6 by tester If CF6 is blown, it should be replaced Fuse CF7 (HPID10: 250V T3.15A): Check: Check the electric continuity of Fuse CF7 by tester If CF7 is blown, it should be replaced Fan motor: Check: Check the voltage of Fan motor by tester If the voltage is normal, Fan motor should be replaced If the voltage is normal, Main PCB should be replaced"
+    },
+    {
+      "errorCode": "C4",
+      "errorMeaning": "Rise of temperature (above 110°C) of Main PCB",
+      "possibleSolution": "Mis-installation: Check: Check the place of installation (blockage of air inlet & outlet) Ensure the installation position to avoid blockage of air inlet & outlet Sensor, Temp. Main PCB: Main PCB should be replaced"
+    },
+    {
+      "errorCode": "C5",
+      "errorMeaning": "Main PCB sensor error",
+      "possibleSolution": "Sensor, Temp. Main PCB: Main PCB should be replaced"
+    },
+    {
+      "errorCode": "C6",
+      "errorMeaning": "Main PCB error",
+      "possibleSolution": "Main PCB: Main PCB should be replaced"
+    },
+    {
+      "errorCode": "C7",
+      "errorMeaning": "Controller PCB serial error",
+      "possibleSolution": "Mis wiring or rare contact [Main PCB - Controller PCB connecting cable]: Check: Check the wiring connection and rare contact After correcting mis wiring, restart operation Controller PCB: Controller PCB should be replaced Main PCB: Main PCB should be replaced Earth wire: Check if earth wire is properly installed"
+    },
+    {
+      "errorCode": "C8",
+      "errorMeaning": "Main PCB error",
+      "possibleSolution": "Main PCB: Check: Turn off the power supply, wait for about 3 minutes, then power up again If the same error code appears, Main PCB should be replaced Check: Check loose cable connections and contacts of reactor"
+    },
+    {
+      "errorCode": "E4",
+      "errorMeaning": "Outgoing water temp. sensor error",
+      "possibleSolution": "Sensor, Temp. Outgoing water: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "E5",
+      "errorMeaning": "Return water temp. sensor error",
+      "possibleSolution": "Sensor, Temp. Return water: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "FU",
+      "errorMeaning": "High pressure switch is operating (HPID13R32 & HPID17R32)",
+      "possibleSolution": "Outside air recirculation: Check: Check temperature difference of Outgoing/ Return water (see Monitor display function) Large difference means flow rate is too low Make sure the position doesn’t block the air inlet and outlet Clogged water circuit: Remove the blockage, then restart operation"
+    },
+    {
+      "errorCode": "P1",
+      "errorMeaning": "Pump error",
+      "possibleSolution": "Pump (*2): Check: Check the voltage of Pump If the voltage is normal, Pump should be replaced If the voltage is abnormal, Main PCB should be replaced The pump is blocked/air-locked or water circuit restricted.: Check: Check the pump and water circuit Remove the blockage, then restart operation"
+    },
+    {
+      "errorCode": "P3",
+      "errorMeaning": "High pressure switch error (HPID13R32 & HPID17R32)",
+      "possibleSolution": "High pressure switch: Check: Check loose cable connections and contacts If the same error code appears, high pressure switch should be replaced"
+    },
+    {
+      "errorCode": "U1",
+      "errorMeaning": "Compressor overheat protection relay operation (HPID13R32 & HPID17R32)",
+      "possibleSolution": "Compressor overheat protection relay: Check: Check the resistance by tester If the compressor overheat protection relay is blown, it should be replaced Gas leakage: Check: Check the service valve and refrigerant circuit (pipe) Correct refrigerant once, then recharge with prescribed mass"
+    },
+    {
+      "errorCode": "L0",
+      "errorMeaning": "EEPROM error",
+      "possibleSolution": "PCB(Controller) and PCB(EEPROM): PCB(Controller) and PCB(EEPROM) should be replaced"
+    },
+    {
+      "errorCode": "L1",
+      "errorMeaning": "DHW temperature sensor error",
+      "possibleSolution": "Sensor, temperature DHW tank: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "L2",
+      "errorMeaning": "Outdoor temperature sensor error",
+      "possibleSolution": "Sensor, temperature outdoor: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "L3",
+      "errorMeaning": "Thermal store temperature sensor error",
+      "possibleSolution": "Sensor, temperature thermal store: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "L4",
+      "errorMeaning": "Mix water temperature sensor error",
+      "possibleSolution": "Sensor, temperature Mix water: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "L5",
+      "errorMeaning": "Humidity sensor error",
+      "possibleSolution": "Sensor, Humidity: Check: Check the resistance by tester If the sensor is faulty, it should be replaced"
+    },
+    {
+      "errorCode": "740",
+      "errorMeaning": "Remote controller communication error",
+      "possibleSolution": "Incorrect remote controller wiring or DIP SW setting: Check: Check loose cable connections and contacts Check DIP SW setting After having corrected the wiring and DIP SW setting, restart operation Loose interface connection cable or contacts: Check: Rear side of remote controller Remote controller: Remote controller should be replaced Controller PCB: Controller PCB should be replaced"
+    },
+    {
+      "errorCode": "E8",
+      "errorMeaning": "Remote controller communication error",
+      "possibleSolution": "Incorrect remote controller wiring Loose interface connection cable or contacts: Check: Check loose cable connections and contacts After having corrected the wiring, restart operation Controller PCB: Controller PCB should be replaced"
+    },
+    {
+      "errorCode": "F5",
+      "errorMeaning": "Main PCB communication error",
+      "possibleSolution": "Incorrect main PCB wiring Loose interface connection cable or contacts: Check: Check loose cable connections and contacts After having corrected the wiring, restart operation Main PCB: Main PCB should be replaced Controller PCB: Controller PCB should be replaced"
+    }
+  ]
+}

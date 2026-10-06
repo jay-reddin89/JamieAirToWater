@@ -1,0 +1,104 @@
+{
+  "Error Codes": [
+    {
+      "errorCode": "L3",
+      "errorMeaning": "Circulation water temperature overheat protection",
+      "possibleSolution": "Flow rate may be reduced. Check for water leakage, strainer blockage and water circulation pump function. The code may display during filling of the primary circuit; complete filling and reset the error code."
+    },
+    {
+      "errorCode": "L4",
+      "errorMeaning": "DHW tank water temperature overheat protection",
+      "possibleSolution": "Check the immersion heater and its contactor."
+    },
+    {
+      "errorCode": "L5",
+      "errorMeaning": "Indoor unit temperature thermistor (THW1, THW2, THW5, THW6, THW7, THW8, THW9) failure",
+      "possibleSolution": "Check resistance across the thermistor."
+    },
+    {
+      "errorCode": "L6",
+      "errorMeaning": "Circulation water freeze protection",
+      "possibleSolution": "Flow rate may be reduced. Check for water leakage, strainer blockage and water circulation pump function. The code may display during filling of the primary circuit; complete filling and reset the error code."
+    },
+    {
+      "errorCode": "L8",
+      "errorMeaning": "Heating operation error",
+      "possibleSolution": "Re-attach any thermistors that have become dislodged."
+    },
+    {
+      "errorCode": "L9",
+      "errorMeaning": "Low primary circuit flow rate detected by flow switch (flow switches 1, 2, 3)",
+      "possibleSolution": "Flow rate may be reduced. Check for water leakage, strainer blockage and water circulation pump function. The code may display during filling of the primary circuit; complete filling and reset the error code. If the flow switch itself does not work, replace it. Caution: the pump valves may be hot."
+    },
+    {
+      "errorCode": "LC",
+      "errorMeaning": "Boiler circulation water temperature overheat protection",
+      "possibleSolution": "Check whether the boiler heating temperature setting exceeds the restriction; see the PAC-TH011HT-E thermistor manual. Flow rate of the heating circuit from the boiler may be reduced. Check for water leakage, strainer blockage and water circulation pump function."
+    },
+    {
+      "errorCode": "LD",
+      "errorMeaning": "Boiler temperature thermistor (THWB1, THWB2) failure",
+      "possibleSolution": "Check resistance across the thermistor."
+    },
+    {
+      "errorCode": "LE",
+      "errorMeaning": "Boiler operation error",
+      "possibleSolution": "Re-attach any thermistors that have become dislodged. Check the status of the boiler."
+    },
+    {
+      "errorCode": "LH",
+      "errorMeaning": "Boiler circulation water freeze protection",
+      "possibleSolution": "Flow rate of the heating circuit from the boiler may be reduced. Check for water leakage, strainer blockage and water circulation pump function."
+    },
+    {
+      "errorCode": "LL",
+      "errorMeaning": "Setting errors of DIP switches on FTC4 control board",
+      "possibleSolution": "For boiler operation, check DIP SW1-1 is ON (With Boiler) and DIP SW2-6 is ON (With Mixing Tank). For 2-zone temperature control, check DIP SW2-7 is ON (2-zone) and DIP SW2-6 is ON (With Mixing Tank)."
+    },
+    {
+      "errorCode": "J0",
+      "errorMeaning": "Communication failure between FTC4 and wireless receiver",
+      "possibleSolution": "Check connection cable for damage or loose connections."
+    },
+    {
+      "errorCode": "P1",
+      "errorMeaning": "Thermistor (room temperature) (TH1) failure",
+      "possibleSolution": "Check resistance across the thermistor."
+    },
+    {
+      "errorCode": "P2",
+      "errorMeaning": "Thermistor (refrigerant liquid temperature) (TH2) failure",
+      "possibleSolution": "Check resistance across the thermistor."
+    },
+    {
+      "errorCode": "P6",
+      "errorMeaning": "Anti-freeze protection of plate heat exchanger",
+      "possibleSolution": "Flow rate may be reduced. Check for water leakage, strainer blockage and water circulation pump function. The code may display during filling of the primary circuit; complete filling and reset the error code. Check for correct amount of refrigerant."
+    },
+    {
+      "errorCode": "J1 - J8",
+      "errorMeaning": "Communication failure between wireless receiver and wireless remote controller",
+      "possibleSolution": "Check the wireless remote controller battery is not flat. Check pairing between the wireless receiver and wireless remote controller. Test wireless communication; see the wireless system manual."
+    },
+    {
+      "errorCode": "E0 - E5",
+      "errorMeaning": "Communication failure between main controller and FTC4",
+      "possibleSolution": "Check connection cable for damage or loose connections."
+    },
+    {
+      "errorCode": "E6 - EF",
+      "errorMeaning": "Communication failure between FTC4 and outdoor unit",
+      "possibleSolution": "Check that the outdoor unit has not been turned off. Check connection cable for damage or loose connections. Refer to the outdoor unit service manual."
+    },
+    {
+      "errorCode": "E9",
+      "errorMeaning": "Outdoor unit receives no signal from indoor unit",
+      "possibleSolution": "Check both units are switched on. Check connection cable for damage or loose connections. Refer to the outdoor unit service manual."
+    },
+    {
+      "errorCode": "U*, F*",
+      "errorMeaning": "Outdoor unit failure",
+      "possibleSolution": "Refer to the outdoor unit service manual."
+    }
+  ]
+}
