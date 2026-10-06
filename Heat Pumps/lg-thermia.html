@@ -48,6 +48,12 @@
         searchInput.addEventListener('input', () => {
             const searchTerm = searchInput.value.trim().toLowerCase(); // Normalize to lower case
 
+            if (!searchTerm) {
+                resultsBox.innerHTML = '';
+                resultsBox.classList.remove('visible');
+                return;
+            }
+
             fetch('../JSON/LG.json')  // Fetch data from LG.json
                 .then(response => {
                     if (!response.ok) {
@@ -62,7 +68,8 @@
                     const combinedResults = errorCodes.flatMap(assembly => 
                         assembly.codes.filter(item => {
                             const codeMatch = item.errorCode.toLowerCase().includes(searchTerm);
-                            const numericMatch = item.errorCode.replace(/[^\d]/g, '').includes(searchTerm.replace(/[^\d]/g, ''));
+                            const numericSearch = searchTerm.replace(/[^\d]/g, '');
+                        const numericMatch = numericSearch !== '' && item.errorCode.replace(/[^\d]/g, '').includes(numericSearch);
                             return codeMatch || numericMatch;
                         }).map(item => ({
                             errorCode: item.errorCode,
