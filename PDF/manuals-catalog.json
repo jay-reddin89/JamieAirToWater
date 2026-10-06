@@ -1,0 +1,67 @@
+[
+  {
+    "brand": "Mitsubishi Electric",
+    "model": "Ecodan EHST20 / EHPT20 cylinder units",
+    "type": "Installation",
+    "file": "mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.pdf",
+    "pages": 56
+  },
+  {
+    "brand": "Vaillant",
+    "model": "aroTHERM plus VWL 105/6–125/6 A S2",
+    "type": "Operation, installation and maintenance",
+    "file": "vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.pdf",
+    "pages": 56
+  },
+  {
+    "brand": "Samsung",
+    "model": "EHS Mono R290 AE***CXYB** outdoor unit",
+    "type": "Installation",
+    "pages": 52,
+    "files": [
+      {
+        "file": "samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-1-26.pdf",
+        "pageRange": "1–26"
+      },
+      {
+        "file": "samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.pdf",
+        "pageRange": "27–52"
+      }
+    ]
+  },
+  {
+    "brand": "Mitsubishi Electric",
+    "model": "Ecodan PUZ-WM AA / HA series",
+    "type": "Installation",
+    "file": "mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.pdf",
+    "pages": 20
+  },
+  {
+    "brand": "Vaillant",
+    "model": "aroTHERM plus VWL 35/6–75/6 A S2",
+    "type": "Operation, installation and maintenance",
+    "file": "vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.pdf",
+    "pages": 56
+  },
+  {
+    "brand": "Grant",
+    "model": "Aerona³ heat pump range and heating controls",
+    "type": "User instructions",
+    "file": "grant-aerona3-user-instructions-irl-doc0016-rev01-2021.pdf",
+    "pages": 12
+  },
+  {
+    "brand": "Grant",
+    "model": "Aerona³ R32 heat pump range",
+    "type": "Installation and servicing",
+    "file": "grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.pdf",
+    "pages": 88
+  },
+  {
+    "brand": "Daikin",
+    "model": "Altherma 4 H ECH₂O EPSX(B)07 / 10 / 14 A",
+    "type": "Installation",
+    "file": "daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.pdf",
+    "pages": 52
+  }
+]
