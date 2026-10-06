@@ -1,25 +1,25 @@
-# Roadmap
+# Feature roadmap
+
+Date: 2026-10-06
+Status: Planned — user requested implementation plans; feature development has not begun.
 
 ## Goal
+Make Jamie Air To Water useful during heat-pump fault diagnosis and service visits while preserving manual-backed answers and the existing static site.
 
-Maintain a useful development and documentation workspace for Jamie Air To Water.
+## Delivery order
 
-## Completed foundations
+| Phase | Deliverables | Dependencies | Exit condition |
+| --- | --- | --- | --- |
+| 0 | Shared source registry, storage design and browser QA setup | Existing app and extracted manuals | Stable source identities and agreed data contracts; verification environment available |
+| 1 | Search all brands and fault history | Phase 0 | Search identifies brand/model correctly; fault records survive refresh and can be backed up |
+| 2 | Service report export | Fault history | Selected faults produce a checked print preview and printable report |
+| 3 | Saved heat pumps, favourites and coverage indicators | Shared foundation | Saved units/bookmarks reopen correct sources; coverage is evidence-based |
+| 4 | Offline access | Shared search/data paths | App, code data and explicitly selected PDFs work offline |
+| 5 | Live AI | Coverage/source metadata, backend/provider decisions | Grounded AI passes evaluation and manual fallback stays usable |
 
-- [x] Prepare the development environment.
-- [x] Deploy the existing static site.
-- [x] Back up the workspace before adding this documentation structure.
-- [x] Create folders and templates for future work.
+Saved units are optional for phase-1 history: manually entered unit snapshots let fault history and reports ship first. Coverage can move earlier because it also improves search and assistant accuracy.
 
-## Candidate milestones
+## Scope
+All eight proposed features are planned. Live AI is blocked on infrastructure choices. No dates, paid services, cloud sync or backend deployment are promised by this plan. Implementation is separate from this documentation request.
 
-These are ideas, not committed work or deployment instructions.
-
-| Milestone | Intended outcome | Status |
-| --- | --- | --- |
-| Website priorities | Agree audience, goals, and improvement order | Proposed |
-| Local asset review | Diagnose and address missing file references | Proposed |
-| Functional review | Check search, navigation, PDFs, and external integrations in a browser | Proposed |
-| Documentation maintenance | Keep context, decisions, and task tracking useful | Ongoing |
-
-Use [the plan template](../templates/plan.md) for a specific approved project.
+See [feature tasks](../tasks/board.md), [architecture](../docs/feature-architecture.md), [validation](../docs/validation-plan.md) and [open decisions](../notes/questions.md).

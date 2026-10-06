@@ -28,4 +28,8 @@ A shared place to create, plan, document, and organise work with an AI assistant
 
 Use descriptive Markdown filenames, such as `2026-10-05-site-review.md`. Link related files using relative paths. Keep current status in `context/current-state.md` and task status in `tasks/board.md`; link to them instead of copying status into several files. Label assumptions and unverified observations. Never store passwords, tokens, private keys, or other secrets here.
 
-This folder is versioned in the JamieAirToWater repository. The original workspace copy remains at `/workspace/LLM`; use this repository copy for future versioned updates. The static Pages workflow uploads the entire repository, so these documents will also be public website assets. The earlier workspace backup predates this folder.
+This folder is versioned in the JamieAirToWater repository. Use this repository copy for updates; historical absolute workspace paths may no longer exist. The static Pages workflow uploads the entire repository, so these documents will also be public website assets. The earlier workspace backup predates this folder.
+
+## Current implementation planning
+
+Start with [the feature roadmap](plans/roadmap.md), [task board](tasks/board.md) and [architecture](docs/feature-architecture.md). Eight feature plans plus shared foundation and release verification tasks are populated. Plans do not automatically execute work.
