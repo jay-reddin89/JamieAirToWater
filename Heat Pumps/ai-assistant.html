@@ -69,7 +69,7 @@
 
                 /* Styles matching victorumjoule.html */
                 body {
-                    background-color: #111827;> /* Dark background */
+                    background-color: #111827; /* Dark background */
                     /* White text */
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
@@ -129,7 +129,7 @@
                     justify-content: space-between;
                     align-items: center;
                     width: 100%;
-                }>
+                }
                 #chatbot-left, #chatbot-right {
                     width: 50%;
                 }
@@ -166,7 +166,6 @@
                 <option value="LG Thermia">LG Thermia</option>
                 <option value="Hitachi Yutaki">Hitachi Yutaki</option>
                 <option value="Panasonic Aquarea">Panasonic Aquarea</option>
-                <option value="Viessman Vitocal">Viessman Vitocal</option>
               </select>
             </div>
 
@@ -180,7 +179,7 @@
                   
                   <div id="chatbot-container">
                     <div id="chatbot-left">
-                      <script src="https://www.chatbees.ai/embed.js" aid="PV8Z750N" colname="Jamie" logoUrl="https://i.imgur.com/R04NL4l.jpeg" brandName="Jamie" greetingMessage="Whats the Error Code and Brand?" thinkingHint="Watching Paint Dry.." messagePlaceholder="Type your message here"> class="text-sm/6"</script>
+                      <script class="text-sm/6" src="https://www.chatbees.ai/embed.js" aid="PV8Z750N" colname="Jamie" logoUrl="https://i.imgur.com/R04NL4l.jpeg" brandName="Jamie" greetingMessage="Whats the Error Code and Brand?" thinkingHint="Watching Paint Dry.." messagePlaceholder="Type your message here"></script>
                     </div>
                     <div id="chatbot-right">
                       <script>
@@ -221,7 +220,6 @@
                               "LG Thermia": "LgThermia.json",
                               "Hitachi Yutaki": "HitachiYutaki.json",
                               "Panasonic Aquarea": "PanasonicAquarea.json",
-                              "Viessman Vitocal": "ViessmanVitocal.json",
                           };
 
                           const fileName = fileNameMapping[brand];
@@ -240,13 +238,15 @@
 
                                       const filteredErrorCodes = errorCodes.filter(item => {
                                           const codeMatch = item.errorCode.toLowerCase().includes(error.toLowerCase());
-                                          const numericMatch = item.errorCode.replace(/[^\d]/g, '').includes(error.replace(/[^\d]/g, ''));
+                                          const numericSearch = error.replace(/[^\d]/g, '');
+                                          const numericMatch = numericSearch !== '' && item.errorCode.replace(/[^\d]/g, '').includes(numericSearch);
                                           return codeMatch || numericMatch;
                                       });
 
                                       const filteredTroubleshooting = troubleshooting.filter(item => {
                                           const codeMatch = item.errorCode.toLowerCase().includes(error.toLowerCase());
-                                          const numericMatch = item.errorCode.replace(/[^\d]/g, '').includes(error.replace(/[^\d]/g, ''));
+                                          const numericSearch = error.replace(/[^\d]/g, '');
+                                          const numericMatch = numericSearch !== '' && item.errorCode.replace(/[^\d]/g, '').includes(numericSearch);
                                           return codeMatch || numericMatch;
                                       });
 

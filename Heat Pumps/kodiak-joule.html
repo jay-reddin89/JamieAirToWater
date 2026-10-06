@@ -47,6 +47,12 @@
         searchInput.addEventListener('input', () => {
             const searchTerm = searchInput.value.trim().toLowerCase(); // Normalize to lower case
 
+            if (!searchTerm) {
+                resultsBox.innerHTML = '';
+                resultsBox.classList.remove('visible');
+                return;
+            }
+
             fetch('../JSON/KodiakJoule.json')
                 .then(response => {
                     if (!response.ok) {
