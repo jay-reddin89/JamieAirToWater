@@ -1,19 +1,19 @@
 # Task board
 
-Last updated: 2026-10-06. Planning request completed; feature tasks are not implemented. Owners remain unassigned.
+Last updated: 2026-10-06. First feature increment implemented; browser QA remains outstanding. In progress means functional code is present but acceptance is not yet complete. Owners remain unassigned.
 
 | ID | Task | Priority | Status | Dependencies |
 | --- | --- | --- | --- | --- |
-| TASK-004 | [Shared source registry and local data foundation](task-004-shared-source-registry-and-local-data-foundation.md) | high | Ready | — |
-| TASK-005 | [Search all brands](task-005-search-all-brands.md) | high | Planned | TASK-004 |
-| TASK-006 | [Saved heat pumps](task-006-saved-heat-pumps.md) | medium | Planned | TASK-004 |
-| TASK-007 | [Fault history](task-007-fault-history.md) | high | Planned | TASK-004 |
-| TASK-008 | [Service report export](task-008-service-report-export.md) | high | Planned | TASK-007 |
-| TASK-009 | [Favourites](task-009-favourites.md) | medium | Planned | TASK-004 |
-| TASK-010 | [Manual coverage indicators](task-010-manual-coverage-indicators.md) | medium | Planned | TASK-004 |
-| TASK-011 | [Offline access](task-011-offline-access.md) | medium | Planned | TASK-004, TASK-005 |
+| TASK-004 | [Shared source registry and local data foundation](task-004-shared-source-registry-and-local-data-foundation.md) | high | In progress | — |
+| TASK-005 | [Search all brands](task-005-search-all-brands.md) | high | In progress | TASK-004 |
+| TASK-006 | [Saved heat pumps](task-006-saved-heat-pumps.md) | medium | In progress | TASK-004 |
+| TASK-007 | [Fault history](task-007-fault-history.md) | high | In progress | TASK-004 |
+| TASK-008 | [Service report export](task-008-service-report-export.md) | high | In progress | TASK-007 |
+| TASK-009 | [Favourites](task-009-favourites.md) | medium | In progress | TASK-004 |
+| TASK-010 | [Manual coverage indicators](task-010-manual-coverage-indicators.md) | medium | In progress | TASK-004 |
+| TASK-011 | [Offline access](task-011-offline-access.md) | medium | In progress | TASK-004, TASK-005 |
 | TASK-012 | [Live AI connection](task-012-live-ai-connection.md) | medium | Blocked | TASK-004, TASK-010 |
-| TASK-013 | [Browser and release verification](task-013-browser-and-release-verification.md) | high | Ready | — |
+| TASK-013 | [Browser and release verification](task-013-browser-and-release-verification.md) | high | Blocked | — |
 
 ## Earlier tasks
 
@@ -30,3 +30,7 @@ Last updated: 2026-10-06. Planning request completed; feature tasks are not impl
 - Populated implementation planning records for the eight proposed features.
 
 See [current state](../context/current-state.md) for evidence and limitations. Status changes belong here and in individual task files.
+
+## First feature increment
+
+Shared source registry and code/page metadata, all-brand search, browser-local fault history, merge-only backup restore and print-preview service reports are present. See [implementation evidence](../sessions/2026-10-06-first-feature-increment.md). Saved units, favourites, offline mode and live AI are not implemented. Coverage metadata exists but its dedicated UI task remains planned.

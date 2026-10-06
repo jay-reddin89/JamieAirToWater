@@ -1,7 +1,7 @@
 # Feature roadmap
 
 Date: 2026-10-06
-Status: Planned — user requested implementation plans; feature development has not begun.
+Status: In progress — first feature increment implemented; real browser QA is outstanding.
 
 ## Goal
 Make Jamie Air To Water useful during heat-pump fault diagnosis and service visits while preserving manual-backed answers and the existing static site.
@@ -20,6 +20,6 @@ Make Jamie Air To Water useful during heat-pump fault diagnosis and service visi
 Saved units are optional for phase-1 history: manually entered unit snapshots let fault history and reports ship first. Coverage can move earlier because it also improves search and assistant accuracy.
 
 ## Scope
-All eight proposed features are planned. Live AI is blocked on infrastructure choices. No dates, paid services, cloud sync or backend deployment are promised by this plan. Implementation is separate from this documentation request.
+All eight proposed features are planned. Live AI is blocked on infrastructure choices. No dates, paid services, cloud sync or backend deployment are promised by this plan. The user subsequently authorized beginning implementation. Current progress is recorded in the task board.
 
 See [feature tasks](../tasks/board.md), [architecture](../docs/feature-architecture.md), [validation](../docs/validation-plan.md) and [open decisions](../notes/questions.md).

@@ -10,19 +10,7 @@
   let rows = []; let loadVersion = 0; let loaded = false;
   config.models.forEach((item, i) => model.add(new Option(item.label, String(i))));
   const normalize = value => value.toUpperCase().replace(/\s+/g, '');
-  function codeMatches(code, query) {
-    const value = normalize(code); const term = normalize(query);
-    if (value.includes(term)) return true;
-    return value.split(',').some(part => {
-      if (part.endsWith('*')) return term.startsWith(part.slice(0, -1));
-      const range = part.match(/^([A-Z]?)([0-9A-F]+)-([A-Z]?)([0-9A-F]+)$/);
-      const input = term.match(/^([A-Z]?)([0-9A-F]+)$/);
-      if (!range || !input || input[1] !== range[1] || (range[3] && range[3] !== range[1])) return false;
-      const radix = /[A-F]/.test(range[2] + range[4]) ? 16 : 10;
-      const number = parseInt(input[2], radix);
-      return !Number.isNaN(number) && number >= parseInt(range[2], radix) && number <= parseInt(range[4], radix);
-    });
-  }
+  const codeMatches = PumpSources.codeMatches;
   function render() {
     if (!loaded) return;
     const query = search.value.trim();
@@ -53,15 +41,9 @@
     try {
       let data = cache.get(source.json);
       if (!data) {
-        const response = await fetch(source.json);
-        if (!response.ok) throw new Error('HTTP ' + response.status);
-        const json = await response.json();
-        if (!Array.isArray(json['Error Codes'])) throw new Error('Invalid code list');
-        const flatten = items => items.flatMap(row => Array.isArray(row.codes) ? flatten(row.codes) : [row]);
-        data = flatten([...json['Error Codes'], ...(json.Troubleshooting || [])]).map(row => {
-          if (typeof row.errorCode !== 'string' || typeof row.errorMeaning !== 'string') throw new Error('Invalid code entry');
-          return {errorCode: row.errorCode, errorMeaning: row.error ? row.error + ' — ' + row.errorMeaning : row.errorMeaning, possibleSolution: typeof row.possibleSolution === 'string' ? row.possibleSolution : ''};
-        });
+        const registered = (await PumpSources.sources()).find(item => item.json === source.json.replace(/^\.\.\//, ''));
+        if (!registered) throw new Error('Unknown source');
+        data = (await PumpSources.codes(registered)).map(row => ({...row, errorMeaning: row.error ? row.error + ' — ' + row.errorMeaning : row.errorMeaning}));
         cache.set(source.json, data);
       }
       if (version !== loadVersion) return;

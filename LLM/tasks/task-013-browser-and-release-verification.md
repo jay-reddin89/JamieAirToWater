@@ -1,6 +1,6 @@
 # TASK-013: Browser and release verification
 
-Status: Ready
+Status: Blocked
 Priority: high
 Owner: Unassigned
 Created: 2026-10-06
@@ -26,7 +26,7 @@ See [architecture](../docs/feature-architecture.md) and [validation plan](../doc
 
 ## Work notes
 
-Planning only. No implementation has started. Preserve existing data and validate a complete user flow before release.
+Browser executable is unavailable in the current environment. Direct tests are recorded; real browser QA remains blocked. Preserve existing data and validate a complete user flow before release.
 
 ## Blockers
 

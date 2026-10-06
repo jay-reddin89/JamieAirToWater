@@ -18,8 +18,18 @@ Direct JSON/schema, source-code-count, page-count, file-link and JavaScript chec
 ## Data limits
 Samsung has a code table but no code-specific remedies. Daikin has only three codes mentioned in installation instructions. Vaillant outdoor, Mitsubishi outdoor and Grant user manuals have no code list. Empty arrays and empty remedy strings express missing source data. Some legacy files contain repeated codes and nested rows. Grant C3 has an apparent source typo recorded in JSON/manuals/README.md.
 
-## Planned, not implemented
-Search all brands, saved heat pumps, fault history, service reports, favourites, coverage indicators, offline access and live AI. This session populates their plans; it does not implement them. See [task board](../tasks/board.md).
+## First feature increment
+
+Added shared source-registry.js and local-store.js, source/row/manual IDs, coverage metadata and per-code PDF page references. Brand pages and the assistant now use shared source loading and normalization. Added search-all.html, faults.html and report.html with homepage links.
+
+Fault history supports create/edit/resolve/reopen, status/unit/date filters, explicit delete with undo, JSON backup export and validated merge preview/import. Report preview uses selected fault snapshots and editable visit/engineer/report notes; Print / Save as PDF invokes browser printing. Records are browser-local, with no cloud sync.
+
+Shared matching, source links, storage CRUD/backup/date/error paths, legacy search/assistant regressions and mock-DOM fault/report flows passed. Real browser, native dialog, mobile layout and print pagination are not tested. Deployment of this increment is not verified.
+
+## Remaining work
+
+Finish browser acceptance for TASK-004/005/007/008. Saved units, favourites, dedicated coverage UI, offline access and live AI remain planned. Coverage metadata is present; there is no new backend.
 
 ## Next action
-Begin TASK-004, the shared registry and local data foundation, and arrange TASK-013 browser verification. Then deliver all-brand search and fault history, followed by report export. Live AI remains blocked on provider/backend/access/budget choices.
+
+Arrange TASK-013 real browser QA, verify the increment, then add saved units and favourites. Backend/provider/access/budget decisions still block live AI.

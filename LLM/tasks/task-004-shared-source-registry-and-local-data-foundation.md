@@ -1,6 +1,6 @@
 # TASK-004: Shared source registry and local data foundation
 
-Status: Ready
+Status: In progress
 Priority: high
 Owner: Unassigned
 Created: 2026-10-06
@@ -25,7 +25,7 @@ See [architecture](../docs/feature-architecture.md) and [validation plan](../doc
 
 ## Work notes
 
-Planning only. No implementation has started. Preserve existing data and validate a complete user flow before release.
+Implementation added in the 2026-10-06 first increment. Functional and mock-DOM checks passed; acceptance remains open until real browser QA. See the implementation session note.
 
 ## Blockers
 
@@ -33,4 +33,4 @@ Dependencies listed above; browser verification environment required for rendere
 
 ## Completion evidence
 
-None yet. Record changed files, meaningful tests, remaining limits and deployed commit when completed.
+See [implementation session](../sessions/2026-10-06-first-feature-increment.md). Source registry, matching, persistence and report interaction checks passed. Browser layout, native PDF behavior and printing are unverified.

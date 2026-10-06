@@ -4,75 +4,107 @@
     "models": [
       {
         "label": "De Dietrich",
-        "json": "../JSON/DeDietrich.json",
+        "json": "JSON/DeDietrich.json",
         "manuals": [
           {
             "label": "De Dietrich strateo",
-            "url": "../PDF/De Dietrich strateo.pdf"
+            "url": "PDF/De Dietrich strateo.pdf",
+            "id": "manual-1f9e4e58b01f"
           },
           {
             "label": "strateotc",
-            "url": "../PDF/strateotc.pdf"
+            "url": "PDF/strateotc.pdf",
+            "id": "manual-9593ff32396b"
           },
           {
             "label": "StrateoExplodedView",
-            "url": "../PDF/StrateoExplodedView.pdf"
+            "url": "PDF/StrateoExplodedView.pdf",
+            "id": "manual-2388b5a67f98"
           }
         ],
-        "note": "Existing app error-code database."
+        "note": "Existing app error-code database.",
+        "id": "source-05b9057478a9",
+        "brandId": "de-dietrich",
+        "brand": "De Dietrich",
+        "pumpPage": "Heat Pumps/de-dietrich.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "partial",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "de-dietrich"
   },
   {
     "name": "Kodiak Joule",
     "models": [
       {
         "label": "Kodiak Joule",
-        "json": "../JSON/KodiakJoule.json",
+        "json": "JSON/KodiakJoule.json",
         "manuals": [
           {
             "label": "Kodiak-Installation-Maintenance-Manual",
-            "url": "../PDF/Kodiak-Installation-Maintenance-Manual.pdf"
+            "url": "PDF/Kodiak-Installation-Maintenance-Manual.pdf",
+            "id": "manual-12dbd01ddb2d"
           },
           {
             "label": "kodiak joule Error codes",
-            "url": "../PDF/kodiak joule Error codes.pdf"
+            "url": "PDF/kodiak joule Error codes.pdf",
+            "id": "manual-94794deb6a4a"
           }
         ],
-        "note": "Existing app error-code database."
+        "note": "Existing app error-code database.",
+        "id": "source-aaf432becb2c",
+        "brandId": "kodiak-joule",
+        "brand": "Kodiak Joule",
+        "pumpPage": "Heat Pumps/kodiak-joule.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "available",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "kodiak-joule"
   },
   {
     "name": "Joule Victorum",
     "models": [
       {
         "label": "Joule Victorum",
-        "json": "../JSON/VictorumJoule.json",
+        "json": "JSON/VictorumJoule.json",
         "manuals": [
           {
             "label": "JouleVictorumManual",
-            "url": "../PDF/JouleVictorumManual.pdf"
+            "url": "PDF/JouleVictorumManual.pdf",
+            "id": "manual-34ed9c79f700"
           },
           {
             "label": "VictorumJouleErrorCodes",
-            "url": "../PDF/VictorumJouleErrorCodes.pdf"
+            "url": "PDF/VictorumJouleErrorCodes.pdf",
+            "id": "manual-800af17c4ef3"
           }
         ],
-        "note": "Existing app error-code database."
+        "note": "Existing app error-code database.",
+        "id": "source-cbd1b227525d",
+        "brandId": "joule-victorum",
+        "brand": "Joule Victorum",
+        "pumpPage": "Heat Pumps/victorumjoule.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "available",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "joule-victorum"
   },
   {
     "name": "Grant Aerona³",
     "models": [
       {
         "label": "Aerona³ R32 heat pump range — Installation and servicing",
-        "json": "../JSON/manuals/grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.json",
+        "json": "JSON/manuals/grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.json",
         "manuals": [
           {
             "label": "Aerona³ R32 heat pump range — Installation and servicing manual",
-            "url": "../PDF/grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.pdf"
+            "url": "PDF/grant-aerona3-r32-installation-servicing-irl-doc0017-rev00-2021.pdf",
+            "id": "manual-f2a90333e264"
           }
         ],
         "note": "Codes from the R32 installation and servicing manual.",
@@ -82,163 +114,459 @@
           57,
           58
         ],
-        "sourceNote": "Extracted from sections 11.4 and 11.5. Component-specific checks and remedies are combined in possibleSolution. Uncoded symptoms and PCB LED flash patterns are excluded. C3 includes an apparent source typo: the table says voltage is normal for both fan and PCB replacement; this is retained rather than guessed."
+        "sourceNote": "Extracted from sections 11.4 and 11.5. Component-specific checks and remedies are combined in possibleSolution. Uncoded symptoms and PCB LED flash patterns are excluded. C3 includes an apparent source typo: the table says voltage is normal for both fan and PCB replacement; this is retained rather than guessed.",
+        "id": "source-1e722df47bda",
+        "brandId": "grant-aerona",
+        "brand": "Grant Aerona³",
+        "pumpPage": "Heat Pumps/grant-areona.html",
+        "coverage": "code-table",
+        "remedyCoverage": "available",
+        "codePages": {
+          "A0": {
+            "manualId": "manual-f2a90333e264",
+            "page": 55
+          },
+          "A1": {
+            "manualId": "manual-f2a90333e264",
+            "page": 55
+          },
+          "A2": {
+            "manualId": "manual-f2a90333e264",
+            "page": 55
+          },
+          "A3": {
+            "manualId": "manual-f2a90333e264",
+            "page": 55
+          },
+          "A4": {
+            "manualId": "manual-f2a90333e264",
+            "page": 55
+          },
+          "A5": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "A6": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "A7": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "A8": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C1": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C2": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C3": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C4": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C5": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C6": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C7": {
+            "manualId": "manual-f2a90333e264",
+            "page": 56
+          },
+          "C8": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "E4": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "E5": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "FU": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "P1": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "P3": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "U1": {
+            "manualId": "manual-f2a90333e264",
+            "page": 57
+          },
+          "L0": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "L1": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "L2": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "L3": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "L4": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "L5": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "740": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "E8": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          },
+          "F5": {
+            "manualId": "manual-f2a90333e264",
+            "page": 58
+          }
+        }
       },
       {
         "label": "Aerona³ heat pump range and heating controls — User instructions",
-        "json": "../JSON/manuals/grant-aerona3-user-instructions-irl-doc0016-rev01-2021.json",
+        "json": "JSON/manuals/grant-aerona3-user-instructions-irl-doc0016-rev01-2021.json",
         "manuals": [
           {
             "label": "Aerona³ heat pump range and heating controls — User instructions manual",
-            "url": "../PDF/grant-aerona3-user-instructions-irl-doc0016-rev01-2021.pdf"
+            "url": "PDF/grant-aerona3-user-instructions-irl-doc0016-rev01-2021.pdf",
+            "id": "manual-bba531cc79ff"
           }
         ],
         "note": "This user guide refers to section 11 of the installation instructions for error codes.",
         "pages": [
           11
         ],
-        "sourceNote": "No error-code list. Troubleshooting directs readers to section 11 of the installation instructions and to contact the installer or service engineer."
+        "sourceNote": "No error-code list. Troubleshooting directs readers to section 11 of the installation instructions and to contact the installer or service engineer.",
+        "id": "source-df6de73e8efb",
+        "brandId": "grant-aerona",
+        "brand": "Grant Aerona³",
+        "pumpPage": "Heat Pumps/grant-areona.html",
+        "coverage": "no-code-list",
+        "remedyCoverage": "none",
+        "codePages": {}
       },
       {
         "label": "Existing Grant fault-code database",
-        "json": "../JSON/GrantAreona.json",
+        "json": "JSON/GrantAreona.json",
         "manuals": [],
-        "note": "Existing app data, separate from the newly extracted R32 manual."
+        "note": "Existing app data, separate from the newly extracted R32 manual.",
+        "id": "source-159d7d17ac2d",
+        "brandId": "grant-aerona",
+        "brand": "Grant Aerona³",
+        "pumpPage": "Heat Pumps/grant-areona.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "available",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "grant-aerona"
   },
   {
     "name": "LG Therma V",
     "models": [
       {
         "label": "LG Therma V",
-        "json": "../JSON/LG.json",
+        "json": "JSON/LG.json",
         "manuals": [
           {
             "label": "LG-Therma-V-Service-Manual_MFL68682007_GM_1217",
-            "url": "../PDF/LG-Therma-V-Service-Manual_MFL68682007_GM_1217.pdf"
+            "url": "PDF/LG-Therma-V-Service-Manual_MFL68682007_GM_1217.pdf",
+            "id": "manual-35db0af56786"
           }
         ],
-        "note": "Existing app error-code database."
+        "note": "Existing app error-code database.",
+        "id": "source-f3fc85fcbfee",
+        "brandId": "lg-therma-v",
+        "brand": "LG Therma V",
+        "pumpPage": "Heat Pumps/lg-thermia.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "available",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "lg-therma-v"
   },
   {
     "name": "Hitachi Yutaki",
     "models": [
       {
         "label": "Hitachi Yutaki",
-        "json": "../JSON/HitachiYutaki.json",
+        "json": "JSON/HitachiYutaki.json",
         "manuals": [
           {
             "label": "Hitachi Yutaki error codes",
-            "url": "../PDF/Hitachi Yutaki error codes.pdf"
+            "url": "PDF/Hitachi Yutaki error codes.pdf",
+            "id": "manual-d4bd7cd7b618"
           }
         ],
-        "note": "Existing app error-code database."
+        "note": "Existing app error-code database.",
+        "id": "source-76f2977cadc3",
+        "brandId": "hitachi-yutaki",
+        "brand": "Hitachi Yutaki",
+        "pumpPage": "Heat Pumps/hitachi-yutaki.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "partial",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "hitachi-yutaki"
   },
   {
     "name": "Panasonic Aquarea",
     "models": [
       {
         "label": "Panasonic Aquarea",
-        "json": "../JSON/PanasonicAquarea.json",
+        "json": "JSON/PanasonicAquarea.json",
         "manuals": [
           {
             "label": "Panasonic Aquarea — Panasonic Aquarea manual",
-            "url": "../PDF/Panasonic Aquarea manual.pdf"
+            "url": "PDF/Panasonic Aquarea manual.pdf",
+            "id": "manual-d7ddbf1d24b2"
           }
         ],
-        "note": "Existing app error-code database."
+        "note": "Existing app error-code database.",
+        "id": "source-98564773b54c",
+        "brandId": "panasonic-aquarea",
+        "brand": "Panasonic Aquarea",
+        "pumpPage": "Heat Pumps/panasonic-aquarea.html",
+        "coverage": "legacy-unverified",
+        "remedyCoverage": "none",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "panasonic-aquarea"
   },
   {
     "name": "Mitsubishi Ecodan",
     "models": [
       {
         "label": "Ecodan EHST20 / EHPT20 cylinder units — Installation",
-        "json": "../JSON/manuals/mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.json",
+        "json": "JSON/manuals/mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.json",
         "manuals": [
           {
             "label": "Ecodan EHST20 / EHPT20 cylinder units — Installation manual",
-            "url": "../PDF/mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.pdf"
+            "url": "PDF/mitsubishi-ecodan-ehst20-ehpt20-cylinder-installation-manual.pdf",
+            "id": "manual-f578108ce30c"
           }
         ],
         "note": "",
         "pages": [
           51
         ],
-        "sourceNote": "Printed page 46. Code ranges and wildcard notation are preserved as printed. E9 is separately listed in the source even though it also lies within E6–EF. References to L3/L8 have been expanded using those actions."
+        "sourceNote": "Printed page 46. Code ranges and wildcard notation are preserved as printed. E9 is separately listed in the source even though it also lies within E6–EF. References to L3/L8 have been expanded using those actions.",
+        "id": "source-5f33f1493622",
+        "brandId": "mitsubishi-ecodan",
+        "brand": "Mitsubishi Ecodan",
+        "pumpPage": "Heat Pumps/mitsubishi-ecodan.html",
+        "coverage": "code-table",
+        "remedyCoverage": "available",
+        "codePages": {
+          "L3": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "L4": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "L5": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "L6": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "L8": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "L9": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "LC": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "LD": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "LE": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "LH": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "LL": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "J0": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "P1": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "P2": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "P6": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "J1 - J8": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "E0 - E5": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "E6 - EF": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "E9": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          },
+          "U*, F*": {
+            "manualId": "manual-f578108ce30c",
+            "page": 51
+          }
+        }
       },
       {
         "label": "Ecodan PUZ-WM AA / HA series — Installation",
-        "json": "../JSON/manuals/mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.json",
+        "json": "JSON/manuals/mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.json",
         "manuals": [
           {
             "label": "Ecodan PUZ-WM AA / HA series — Installation manual",
-            "url": "../PDF/mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.pdf"
+            "url": "PDF/mitsubishi-ecodan-puz-wm-50-60-85-112-aa-ha-installation-manual-bh79d849h03uk.pdf",
+            "id": "manual-fc3cc46f9e0c"
           }
         ],
         "note": "This outdoor-unit installation manual contains no code list. Select the cylinder-unit manual for its codes, or consult the service manual for your exact outdoor model.",
         "pages": [
           15
         ],
-        "sourceNote": "Scanned manual checked with OCR across all 20 PDF pages. Section 8.1 says LEDs flash on faults and section 8.2 refers to the indoor-unit installation manual. No named error codes or code-to-meaning table is provided."
+        "sourceNote": "Scanned manual checked with OCR across all 20 PDF pages. Section 8.1 says LEDs flash on faults and section 8.2 refers to the indoor-unit installation manual. No named error codes or code-to-meaning table is provided.",
+        "id": "source-0deeea85057f",
+        "brandId": "mitsubishi-ecodan",
+        "brand": "Mitsubishi Ecodan",
+        "pumpPage": "Heat Pumps/mitsubishi-ecodan.html",
+        "coverage": "no-code-list",
+        "remedyCoverage": "none",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "mitsubishi-ecodan"
   },
   {
     "name": "Vaillant aroTHERM plus",
     "models": [
       {
         "label": "aroTHERM plus VWL 105/6–125/6 A S2 — Operation, installation and maintenance",
-        "json": "../JSON/manuals/vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.json",
+        "json": "JSON/manuals/vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.json",
         "manuals": [
           {
             "label": "aroTHERM plus VWL 105/6–125/6 A S2 — Operation, installation and maintenance manual",
-            "url": "../PDF/vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.pdf"
+            "url": "PDF/vaillant-arotherm-plus-vwl-105-125-6-a-s2-operation-installation-maintenance-0020330792-03.pdf",
+            "id": "manual-d7990667d9b6"
           }
         ],
         "note": "This outdoor-unit manual refers to the indoor-unit installation instructions for fault messages. No error-code list is supplied in this PDF.",
         "pages": [
           38
         ],
-        "sourceNote": "No error-code list in this outdoor-unit manual. Section 10.1 directs readers to the indoor-unit installation instructions, Appendix Fault messages."
+        "sourceNote": "No error-code list in this outdoor-unit manual. Section 10.1 directs readers to the indoor-unit installation instructions, Appendix Fault messages.",
+        "id": "source-13de7b755ef8",
+        "brandId": "vaillant-arotherm-plus",
+        "brand": "Vaillant aroTHERM plus",
+        "pumpPage": "Heat Pumps/vaillant-arotherm-plus.html",
+        "coverage": "no-code-list",
+        "remedyCoverage": "none",
+        "codePages": {}
       },
       {
         "label": "aroTHERM plus VWL 35/6–75/6 A S2 — Operation, installation and maintenance",
-        "json": "../JSON/manuals/vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.json",
+        "json": "JSON/manuals/vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.json",
         "manuals": [
           {
             "label": "aroTHERM plus VWL 35/6–75/6 A S2 — Operation, installation and maintenance manual",
-            "url": "../PDF/vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.pdf"
+            "url": "PDF/vaillant-arotherm-plus-vwl-35-75-6-a-s2-operation-installation-maintenance-0020330791-03.pdf",
+            "id": "manual-c0e5ff940a99"
           }
         ],
         "note": "This outdoor-unit manual refers to the indoor-unit installation instructions for fault messages. No error-code list is supplied in this PDF.",
         "pages": [
           36
         ],
-        "sourceNote": "No error-code list in this outdoor-unit manual. Section 10.1 directs readers to the indoor-unit installation instructions, Appendix Fault messages."
+        "sourceNote": "No error-code list in this outdoor-unit manual. Section 10.1 directs readers to the indoor-unit installation instructions, Appendix Fault messages.",
+        "id": "source-699e34e323d5",
+        "brandId": "vaillant-arotherm-plus",
+        "brand": "Vaillant aroTHERM plus",
+        "pumpPage": "Heat Pumps/vaillant-arotherm-plus.html",
+        "coverage": "no-code-list",
+        "remedyCoverage": "none",
+        "codePages": {}
       }
-    ]
+    ],
+    "id": "vaillant-arotherm-plus"
   },
   {
     "name": "Samsung EHS Mono R290",
     "models": [
       {
         "label": "EHS Mono R290 AE***CXYB** outdoor unit — Installation",
-        "json": "../JSON/manuals/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.json",
+        "json": "JSON/manuals/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.json",
         "manuals": [
           {
             "label": "EHS Mono R290 AE***CXYB** outdoor unit — Pages 1–26",
-            "url": "../PDF/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-1-26.pdf"
+            "url": "PDF/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-1-26.pdf",
+            "id": "manual-cf1762e2f711"
           },
           {
             "label": "EHS Mono R290 AE***CXYB** outdoor unit — Pages 27–52",
-            "url": "../PDF/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.pdf"
+            "url": "PDF/samsung-ehs-mono-r290-outdoor-installation-manual-db68-12498b-01-en-pages-27-52.pdf",
+            "id": "manual-85b7079137df"
           }
         ],
         "note": "The manual lists code meanings but does not provide per-code remedies.",
@@ -246,20 +574,342 @@
           19,
           20
         ],
-        "sourceNote": "The manual gives meanings and error sources, but no per-code remedies. possibleSolution is intentionally empty. Original PDF pages 45–46 are in the second Samsung PDF."
+        "sourceNote": "The manual gives meanings and error sources, but no per-code remedies. possibleSolution is intentionally empty. Original PDF pages 45–46 are in the second Samsung PDF.",
+        "id": "source-b39f37f9660d",
+        "brandId": "samsung-ehs-mono-r290",
+        "brand": "Samsung EHS Mono R290",
+        "pumpPage": "Heat Pumps/samsung-ehs.html",
+        "coverage": "code-table",
+        "remedyCoverage": "none",
+        "codePages": {
+          "E108": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E120": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E121": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E122": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E123": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E162": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E163": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E177": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E201": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E202": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E205": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E221": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E231": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E241": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E251": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E262": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E266": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E269": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E276": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E291": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E296": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E308": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E321": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E322": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E381": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E403": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E407": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E410": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E416": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E425": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E428": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E436": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E438": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E439": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E440": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E441": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E443": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E458": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E461": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E462": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E464": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E465": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E466": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E467": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E468": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E469": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E471": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E474": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E475": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E483": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E484": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E485": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E488": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E500": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E507": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E536": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E554": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E563": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E590": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E897": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E899": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E900": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E901": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E902": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E904": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E906": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E907": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E908": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E909": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E910": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E911": {
+            "manualId": "manual-85b7079137df",
+            "page": 19
+          },
+          "E912": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          },
+          "E913": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          },
+          "E914": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          },
+          "E915": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          },
+          "E916": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          },
+          "E919": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          },
+          "E973": {
+            "manualId": "manual-85b7079137df",
+            "page": 20
+          }
+        }
       }
-    ]
+    ],
+    "id": "samsung-ehs-mono-r290"
   },
   {
     "name": "Daikin Altherma 4 H",
     "models": [
       {
         "label": "Altherma 4 H ECH₂O EPSX(B)07 / 10 / 14 A — Installation",
-        "json": "../JSON/manuals/daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.json",
+        "json": "JSON/manuals/daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.json",
         "manuals": [
           {
             "label": "Altherma 4 H ECH₂O EPSX(B)07 / 10 / 14 A — Installation manual",
-            "url": "../PDF/daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.pdf"
+            "url": "PDF/daikin-altherma-4-h-ech2o-epsx-07-10-14-a-installation-manual-4pen773389-1c-en.pdf",
+            "id": "manual-6eb00ac98cc7"
           }
         ],
         "note": "Only three codes are mentioned in this installation manual. This is not a complete service-code list.",
@@ -268,8 +918,29 @@
           20,
           34
         ],
-        "sourceNote": "Only codes explicitly mentioned in installation instructions are included. This is not a complete fault-code table. Meanings for 7H and 89-10 describe the stated circumstances; 89-10 has no formal fault name in the source."
+        "sourceNote": "Only codes explicitly mentioned in installation instructions are included. This is not a complete fault-code table. Meanings for 7H and 89-10 describe the stated circumstances; 89-10 has no formal fault name in the source.",
+        "id": "source-eecd26b1ee07",
+        "brandId": "daikin-altherma-4-h",
+        "brand": "Daikin Altherma 4 H",
+        "pumpPage": "Heat Pumps/daikin-altherma.html",
+        "coverage": "partial",
+        "remedyCoverage": "available",
+        "codePages": {
+          "7H": {
+            "manualId": "manual-6eb00ac98cc7",
+            "page": 9
+          },
+          "AA-01": {
+            "manualId": "manual-6eb00ac98cc7",
+            "page": 20
+          },
+          "89-10": {
+            "manualId": "manual-6eb00ac98cc7",
+            "page": 34
+          }
+        }
       }
-    ]
+    ],
+    "id": "daikin-altherma-4-h"
   }
 ]

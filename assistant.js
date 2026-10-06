@@ -11,7 +11,7 @@
     const source = current(); el('source-note').textContent = source?.note || ''; const links = el('manual-links'); links.replaceChildren();
     const sources = brand.value === '' ? [] : brands[Number(brand.value)].models;
     const manuals = [...new Map(sources.flatMap(s => s.manuals).map(m => [m.url, m])).values()];
-    for (const manual of manuals) { const a = document.createElement('a'); a.href = manual.url; a.textContent = manual.label; a.target = '_blank'; a.rel = 'noopener'; links.append(a); }
+    for (const manual of manuals) { const a = document.createElement('a'); a.href = PumpSources.url(manual.url); a.textContent = manual.label; a.target = '_blank'; a.rel = 'noopener'; links.append(a); }
     if (!manuals.length) paragraph(links, 'Select a brand to see its manuals. You can also browse all manuals below.');
   }
   brand.addEventListener('change', () => { reset(); model.replaceChildren(); model.disabled = brand.value === ''; if (brand.value !== '') brands[Number(brand.value)].models.forEach((s,i) => model.add(new Option(s.label, String(i)))); else model.add(new Option('Select a brand first', '')); updateManuals(); });
@@ -38,12 +38,7 @@
     const ranked = rows.map(row => ({row, score:words.filter(w => row.errorMeaning.toLowerCase().includes(w)).length})).filter(x => x.score >= Math.min(2, words.length) && x.score > 0).sort((a,b)=>b.score-a.score);
     return ranked.slice(0,5).map(x=>x.row);
   }
-  function pageFor(source, code) {
-    if (source.json.includes('grant-aerona3-r32')) { if (/^A[0-4]$/.test(code)) return 55; if (/^A[5-8]$|^C[1-7]$/.test(code)) return 56; if (/^C8$|^E[45]$|^FU$|^P[13]$|^U1$/.test(code)) return 57; return 58; }
-    if (source.json.includes('samsung')) return Number(code.slice(1)) >= 912 ? 20 : 19;
-    if (source.json.includes('daikin')) return {'7H':9,'AA-01':20,'89-10':34}[code];
-    return source.pages?.length === 1 ? source.pages[0] : null;
-  }
+  function pageFor(source, code) { return source.codePages?.[code]?.page || null; }
   el('ask-form').addEventListener('submit', async event => {
     event.preventDefault(); const text = question.value.trim(); if (!text || el('send').disabled) return;
     message(text,true); question.value = ''; const source = current();
@@ -51,21 +46,21 @@
     const requestVersion = version; el('send').disabled = true; el('status').textContent = 'Checking the selected source…';
     try {
       let rows = cache.get(source.json);
-      if (!rows) { const response = await fetch(source.json); if (!response.ok) throw new Error('Source unavailable'); const data = await response.json(); if (!Array.isArray(data['Error Codes'])) throw new Error('Invalid source'); const flatten = items => items.flatMap(r=>Array.isArray(r.codes)?flatten(r.codes):[r]); rows = flatten([...data['Error Codes'],...(data.Troubleshooting||[])]).filter(r=>typeof r.errorCode === 'string' && typeof r.errorMeaning === 'string'); cache.set(source.json,rows); }
+      if (!rows) { rows = await PumpSources.codes(source); cache.set(source.json,rows); }
       if (requestVersion !== version) return;
       const matches = findMatches(rows,text); let reply;
       if (!rows.length) reply = message('This selected manual contains no error-code list. I cannot identify a fault from it. What is the indoor-unit model and the exact code on its display? Consult its installation or service manual.');
       else if (!matches.length) reply = message('I could not find a documented match in this source. What is the exact code, including any letters, and what happens when the fault occurs? Check that the selected model/source matches the unit.');
       else {
         const exact = /\d/.test(text); reply = message(exact ? 'The selected source lists the following matches:' : 'These documented entries may relate to the description. A symptom match does not confirm the diagnosis; check the exact code on the display.');
-        for (const row of matches.slice(0,8)) { const h = document.createElement('h2'); h.textContent = 'Error code: '+row.errorCode; reply.append(h); paragraph(reply,'Meaning: '+(row.error ? row.error+' — ' : '')+row.errorMeaning); paragraph(reply,'Documented remedy: '+(row.possibleSolution || 'No remedy is provided in this source.')); const page = pageFor(source,row.errorCode); if (source.manuals.length) { const a = document.createElement('a'); a.href = source.manuals.find(m=>m.url.includes('27-52'))?.url || source.manuals[0].url; if (page) a.href += '#page='+page; a.textContent = page ? 'Source PDF · page '+page : 'Source PDF'; a.target = '_blank'; a.rel = 'noopener'; reply.append(a); } }
+        for (const row of matches.slice(0,8)) { const h = document.createElement('h2'); h.textContent = 'Error code: '+row.errorCode; reply.append(h); paragraph(reply,'Meaning: '+(row.error ? row.error+' — ' : '')+row.errorMeaning); paragraph(reply,'Documented remedy: '+(row.possibleSolution || 'No remedy is provided in this source.')); const page = pageFor(source,row.errorCode); if (source.manuals.length) { const a = document.createElement('a'); a.href = PumpSources.url(source.manuals.find(m=>m.id === source.codePages?.[row.errorCode]?.manualId)?.url || source.manuals[0].url); if (page) a.href += '#page='+page; a.textContent = page ? 'Source PDF · page '+page : 'Source PDF'; a.target = '_blank'; a.rel = 'noopener'; reply.append(a); } }
         if (matches.length > 8) paragraph(reply,'More matches exist. Enter the full code to narrow the result.');
       }
       paragraph(reply,'Source: '+source.label,'source'); if (source.sourceNote) paragraph(reply,source.sourceNote,'source');
-      if (!matches.length) for (const m of source.manuals) { const a=document.createElement('a');a.href=m.url;a.textContent=m.label;a.target='_blank';a.rel='noopener';reply.append(a); }
+      if (!matches.length) for (const m of source.manuals) { const a=document.createElement('a');a.href=PumpSources.url(m.url);a.textContent=m.label;a.target='_blank';a.rel='noopener';reply.append(a); }
       el('status').textContent = 'Manual lookup complete.';
     } catch (error) { if (requestVersion === version) { message('The source could not be loaded. Please try again, or open PDF Files to consult the manual.'); el('status').textContent = 'Source loading failed.'; } }
     finally { if (requestVersion === version) { el('send').disabled = false; question.focus(); } }
   });
-  fetch('../JSON/assistant-sources.json').then(response=>{if(!response.ok)throw new Error();return response.json();}).then(data=>{brands=data; brands.forEach((b,i)=>brand.add(new Option(b.name,String(i)))); updateManuals();}).catch(()=>{el('status').textContent='Could not load brand sources. Refresh the page to retry.';});
+  PumpSources.load().then(data=>{brands=data; brands.forEach((b,i)=>brand.add(new Option(b.name,String(i)))); updateManuals();}).catch(()=>{el('status').textContent='Could not load brand sources. Refresh the page to retry.';});
 })();
